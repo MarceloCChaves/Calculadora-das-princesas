@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora || Princesas</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" name="calc">
+            <h3><strong>Calculadora || Princesas</h3>
+            <h4 id="resultOnScreen" style="display: none;"></h4>
+            <input type="text" id="visor" name="visor" disabled>
+            <div class="0-2">
+                <button type="button" id="btn0" value="0" onclick="botao(value)"><img src="./img/0-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn1"  value="1" onclick="botao(value)"><img src="./img/1-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn2"  value="2" onclick="botao(value)"><img src="./img/2.jpg" alt=""></button>
+                <button type="button" id="btn3"  value="3" onclick="botao(value)"><img src="./img/3-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn4"  value="4" onclick="botao(value)"><img src="./img/4-removebg-preview.png" alt=""></button>
+            </div>
+            <div class="6-9">
+                <button type="button" id="btn5"  value="5" onclick="botao(value)"><img src="./img/5-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn6"  value="6" onclick="botao(value)"><img src="./img/6-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn7"  value="7" onclick="botao(value)"><img src="./img/7-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn8"  value="8" onclick="botao(value)"><img src="./img/8-removebg-preview.png" alt=""></button>
+                <button type="button" id="btn9"  value="9" onclick="botao(value)"><img src="./img/9-removebg-preview.png" alt=""></button>
+            </div>
+            <div class="sum-sub">
+                <button type="button" id="btnSoma"  value="+" onclick="botao(value)">+</button>
+                <button type="button" id="btnSubtrair"  value="-" onclick="botao(value)">-</button>
+                <button type="button" id="btnIgual" value="-" onclick="calcular(), resultadoNaTela(), disableButtons()">=</button>
+                <button type="button" id="btnClear" value="" onclick="resetar()">C</button>
+            </div>
+        </form>
+    </div>
+
+    <audio src="./audio/Numero1.m4a" id="audio1"></audio>
+    <audio src="./audio/Numero2.m4a" id="audio2"></audio>
+    <audio src="./audio/Numero3.m4a" id="audio3"></audio>
+    <audio src="./audio/Numero4.m4a" id="audio4"></audio>
+    <audio src="./audio/Numero5.m4a" id="audio5"></audio>
+    <audio src="./audio/Numero6.m4a" id="audio6"></audio>
+    <audio src="./audio/Numero7.m4a" id="audio7"></audio>
+    <audio src="./audio/Numero8.m4a" id="audio8"></audio>
+    <audio src="./audio/Numero9.m4a" id="audio9"></audio>
+    <audio src="./audio/Numero0.m4a" id="audio0"></audio>
+    <audio src="./audio/Soma.m4a" id="audioSoma"></audio>
+    <audio src="./audio/Igual.m4a" id="audioIgual"></audio>
+    <audio src="./audio/Subtracao.m4a" id="audioSubtracao"></audio>
+
+    <script src="./calculadora.js"></script>
+</body>
+</html>
